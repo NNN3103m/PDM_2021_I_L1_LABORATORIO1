@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PDM_2021_I_L1_LABORATORIO1</string>
+    <string name="cobrar_enee">Cobrar ENEE</string>
+    <string name="cobrar_sanaa">Cobrar SANAA</string>
+    <string name="recarga_tigo">Recarga TIGO</string>
+    <string name="recarga_claro">Recarga CLARO</string>
+    <string name="retirar_dinero">Retirar Dinero</string>
+    <string name="enviar_transferencia">Enviar Transferencia</string>
+</resources>
