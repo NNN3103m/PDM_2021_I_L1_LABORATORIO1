@@ -25,4 +25,11 @@
     <string name="cuenta_a_debitar">Cuenta a debitar</string>
     <string name="no_contrato">No. Contrato</string>
     <string name="facturas">Facturas</string>
+    <string name="super_recarga">Super Recarga</string>
+    <string name="recarga">Recarga</string>
+    <string name="numerotelefono">Numero Telefono</string>
+    <string name="numero_telefono">Numero Telefono</string>
+    <string name="cantidad_recarga">Cantidad Recarga</string>
+    <string name="cantidad_super">Cantidad Super</string>
+
 </resources>
