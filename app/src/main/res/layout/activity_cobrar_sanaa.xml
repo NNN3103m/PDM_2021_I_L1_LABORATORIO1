@@ -10,9 +10,126 @@
         android:id="@+id/btnRegresarSanaa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="140dp"
+        android:layout_marginBottom="64dp"
         android:text="@string/regresar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.836"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txvContrato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="11dp"
+        android:text="@string/no_contrato"
+        app:layout_constraintBottom_toTopOf="@+id/txtContrato"
+        app:layout_constraintStart_toStartOf="@+id/txtContrato" />
+
+    <EditText
+        android:id="@+id/txtContrato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvFacturas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/facturas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContrato" />
+
+    <EditText
+        android:id="@+id/txtFacturas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvFacturas" />
+
+    <TextView
+        android:id="@+id/txvMontoPagarSanaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/monto_a_pagar"
+        app:layout_constraintStart_toStartOf="@+id/txtFacturas"
+        app:layout_constraintTop_toBottomOf="@+id/txtFacturas" />
+
+    <TextView
+        android:id="@+id/txvCuentaDebitarSanaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="13dp"
+        android:text="@string/cuenta_a_debitar"
+        app:layout_constraintBottom_toTopOf="@+id/txtCuentaDebitarSanaa"
+        app:layout_constraintStart_toStartOf="@+id/txtCuentaDebitarSanaa" />
+
+    <EditText
+        android:id="@+id/txtCuentaDebitarSanaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMontoPagarSanaa" />
+
+    <EditText
+        android:id="@+id/txtMontoPagarSanaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvMontoPagarSanaa" />
+
+    <TextView
+        android:id="@+id/txvConceptoSanaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/concepto"
+        app:layout_constraintBottom_toTopOf="@+id/txtConceptoSanaa"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtConceptoSanaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="51dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCuentaDebitarSanaa" />
+
+    <Button
+        android:id="@+id/btnEnviarSanaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="68dp"
+        android:text="@string/enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

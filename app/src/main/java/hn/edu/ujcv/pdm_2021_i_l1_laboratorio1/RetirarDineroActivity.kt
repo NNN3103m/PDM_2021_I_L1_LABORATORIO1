@@ -6,7 +6,6 @@ import kotlinx.android.synthetic.main.activity_cobrar_enee.*
 import kotlinx.android.synthetic.main.activity_retirar_dinero.*
 import android.widget.Toast
 import android.content.Intent
-import com.basgeekball.awesomevalidation.AwesomeValidation
 
 class RetirarDineroActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

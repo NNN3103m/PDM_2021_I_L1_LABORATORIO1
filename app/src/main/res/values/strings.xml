@@ -17,4 +17,12 @@
     <string name="nombre_destino">Nombre Destino</string>
     <string name="cuenta_destino">Cuenta destino</string>
     <string name="felicidades_realizaste_con_exito_tu_transaccion">Felicidades Realizaste con éxito tu Transacción</string>
+    <string name="clave_primaria">Clave Primaria</string>
+    <string name="numero_de_factura">Numero de Factura</string>
+    <string name="monto_a_pagar">Monto a Pagar</string>
+    <string name="concepto">Concepto</string>
+    <string name="enviar_pago">Enviar Pago</string>
+    <string name="cuenta_a_debitar">Cuenta a debitar</string>
+    <string name="no_contrato">No. Contrato</string>
+    <string name="facturas">Facturas</string>
 </resources>

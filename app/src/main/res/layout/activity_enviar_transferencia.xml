@@ -19,17 +19,17 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/txvOrigen"
+        android:id="@+id/txvCuentaOrigen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginBottom="4dp"
         android:text="@string/cuenta_de_origen"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumber" />
+        app:layout_constraintBottom_toTopOf="@+id/txtCuentaOrigen"
+        app:layout_constraintStart_toStartOf="@+id/txtCuentaOrigen" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/txtCuentaOrigen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -50,7 +50,7 @@
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/txtCuentaOrigen" />
 
     <TextView
         android:id="@+id/txvNombre"

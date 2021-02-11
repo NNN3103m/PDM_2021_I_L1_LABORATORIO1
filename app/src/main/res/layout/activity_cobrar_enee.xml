@@ -10,9 +10,139 @@
         android:id="@+id/btnRegresarEnee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="141dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="124dp"
         android:text="@string/regresar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.803"
+        app:layout_constraintStart_toEndOf="@+id/btnEnviar"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txvClavePrimaria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="379dp"
+        android:text="@string/clave_primaria"
+        app:layout_constraintBottom_toTopOf="@+id/txtConcepto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtClavePrimaria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="15dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txvNumFactura"
+        app:layout_constraintStart_toStartOf="@+id/txvClavePrimaria"
+        app:layout_constraintTop_toBottomOf="@+id/txvClavePrimaria" />
+
+    <TextView
+        android:id="@+id/txvNumFactura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/numero_de_factura"
+        app:layout_constraintBottom_toTopOf="@+id/txtNumFactura"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNumFactura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="13dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txvMontoPagar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txvMontoPagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/monto_a_pagar"
+        app:layout_constraintBottom_toTopOf="@+id/txtMontoPagar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtMontoPagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/txvCuentaDebitar"
+        app:layout_constraintEnd_toEndOf="@+id/txvCuentaDebitar"
+        app:layout_constraintStart_toEndOf="@+id/txvCuentaDebitar" />
+
+    <TextView
+        android:id="@+id/txvCuentaDebitar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="11dp"
+        android:text="@string/cuenta_a_debitar"
+        app:layout_constraintBottom_toTopOf="@+id/txtCuentaDebitar"
+        app:layout_constraintStart_toStartOf="@+id/txtCuentaDebitar" />
+
+    <EditText
+        android:id="@+id/txtCuentaDebitar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="23dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txvConcepto"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txvConcepto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="17dp"
+        android:text="@string/concepto"
+        app:layout_constraintBottom_toTopOf="@+id/txtConcepto"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtConcepto"
+        android:layout_width="214dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="200dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="124dp"
+        android:text="@string/enviar_pago"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnRegresarEnee"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtConcepto"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

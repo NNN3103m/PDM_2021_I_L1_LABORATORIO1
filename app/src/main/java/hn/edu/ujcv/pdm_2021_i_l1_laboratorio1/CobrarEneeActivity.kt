@@ -9,5 +9,6 @@ class CobrarEneeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cobrar_enee)
         btnRegresarEnee.setOnClickListener{onBackPressed()}
+
     }
 }
