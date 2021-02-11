@@ -6,6 +6,7 @@ import kotlinx.android.synthetic.main.activity_cobrar_enee.*
 import kotlinx.android.synthetic.main.activity_retirar_dinero.*
 import android.widget.Toast
 import android.content.Intent
+import com.basgeekball.awesomevalidation.AwesomeValidation
 
 class RetirarDineroActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +15,9 @@ class RetirarDineroActivity : AppCompatActivity() {
         btnRegresarRetirarDinero.setOnClickListener{onBackPressed()}
         btnRetirarDineroEnviar.setOnClickListener{enviar()}
     }
+
+    var montoperm = 5000;
+
     fun enviar(){
         if(txtMonto.text.toString().isEmpty() && txtCuenta.text.toString().isEmpty()){
             Toast.makeText(this,"Debe Ingresar un monto y una cuenta.", Toast.LENGTH_SHORT).show()
@@ -21,8 +25,11 @@ class RetirarDineroActivity : AppCompatActivity() {
         else if (txtMonto.text.toString().isNotEmpty() && txtCuenta.text.toString().isEmpty()){
             Toast.makeText(this,"Debe Ingresar una cuenta.", Toast.LENGTH_SHORT).show()
         }
-        else if (txtMonto.text.toString().isEmpty() && txtCuenta.text.toString().isNotEmpty()){
+        else if (txtMonto.text.toString().isEmpty() && txtCuenta.text.toString().isNotEmpty() ){
             Toast.makeText(this,"Debe Ingresar un monto.", Toast.LENGTH_SHORT).show()
+        }
+        else if(txtMonto.text.toString() > montoperm.toString()){
+            Toast.makeText( this, "Monto válido (máximo 5000)", Toast.LENGTH_SHORT).show()
         }
         else{
             val intent = Intent(this, FinalizadoActivity::class.java)
