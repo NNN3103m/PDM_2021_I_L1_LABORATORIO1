@@ -1,4 +1,4 @@
-package hn.edu.ujcv.pdm_2021_i_l1_laboratorio1
+package hn.edu.ujcv.PDM_2021_II_L1_LABORATORIO1
 
 import org.junit.Test
 

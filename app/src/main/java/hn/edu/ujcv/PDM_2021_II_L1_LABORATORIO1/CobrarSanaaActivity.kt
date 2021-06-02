@@ -1,10 +1,9 @@
-package hn.edu.ujcv.pdm_2021_i_l1_laboratorio1
+package hn.edu.ujcv.PDM_2021_II_L1_LABORATORIO1
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_cobrar_enee.*
 import kotlinx.android.synthetic.main.activity_cobrar_sanaa.*
 
 class CobrarSanaaActivity : AppCompatActivity() {
